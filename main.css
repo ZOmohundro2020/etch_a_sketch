@@ -1,0 +1,35 @@
+#container {
+    width: 83vw;
+    display: grid;
+    grid-template-columns: repeat(16, 5vw);
+    grid-template-rows: repeat(16, 5vw);
+    grid-gap: 1px;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid black;
+}
+
+.gridItem {
+    position: relative;
+    /* border: 1px solid blue; */      
+}
+
+.divChanged {
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+/* .gridItem::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+} */
+
