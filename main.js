@@ -8,8 +8,8 @@ const container = document.getElementById('container');
 
 for (let i = 0;i < 256;i++){
     const div = document.createElement('div');
-    div.innerText = i
-    div.className = "gridItem"
+    //div.innerText = i;
+    div.className = "gridItem";
     container.appendChild(div);
 }
 
@@ -20,9 +20,16 @@ console.log(typeof(gridItem_div));
 
 //add event listener to created div elements applies class divChanged
 
- gridItem_div.forEach(key => key.addEventListener('mouseenter', (e) => {
-     console.log(e.target);
- }));
+Array.from(gridItem_div).forEach(function (e){
+    e.addEventListener('mouseenter', function (e) {
+        //console.log(e.target);
+        this.className = "divChanged"
+    });
+});
 
 //test
-
+// this.gridButtonItems.forEach(function (item, idx) {
+//     item.addEventListener('click', function () {
+//         self._showContent(idx);
+//     });
+// });
