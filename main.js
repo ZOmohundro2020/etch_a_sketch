@@ -58,14 +58,16 @@ resetButton.addEventListener('click', buttonClicked);
 //then start the main loop by making divs -- makeDivs()
 
 function buttonClicked() {
-    Array.from(gridItem_div).forEach(function (e){
-        e.classList.remove("divChanged");
-    });
+    
     let getGridSize = prompt("Please enter a new grid size (1-100)");
-    gridSize = getGridSize;
-
-    setGrid(gridSize);
-    makeDivs();
+    if (getGridSize >= 1 && getGridSize <=100){
+        Array.from(gridItem_div).forEach(function (e){
+            e.classList.remove("divChanged");
+        });
+        gridSize = getGridSize; //modify global variable
+        setGrid(gridSize);
+        makeDivs()   
+    }
 }
 
 //function that removes all divs to clear thigns out before changing sizes
