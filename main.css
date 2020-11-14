@@ -1,10 +1,11 @@
 #container {
-    width: 83vw;
+    width: 500px;
+    height: 500px;
     display: grid;
     
     
-    grid-template-columns: repeat(16, 5vw);
-    grid-template-rows: repeat(16, 5vw);
+    /* grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr); */
     
     
     /* grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -16,11 +17,12 @@
     align-content: center;
     border: 1px solid black;
     margin-top: 12px;
+    padding: 0px;
 }
 
 .gridItem {
     position: relative;
-    /* border: 1px solid blue; */      
+    border: 1px solid blue;      
 }
 
 .divChanged {
