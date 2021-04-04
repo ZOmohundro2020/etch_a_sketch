@@ -1,6 +1,8 @@
 # etch_a_sketch
 Odin Project Etch-A-Sketch project
 
+See it live: https://zomohundro2020.github.io/etch_a_sketch/
+
 Goals:
 
 Create a webpage with a 16x16 grid of square divs
